@@ -1,7 +1,6 @@
 # Laboratorio_A01703889
 Laboratorio de GitHub_Adrian Matute
 
-<<<<<<< HEAD
 Desenfoque de cuadro simple:
 Este núcleo de convolución tiene un efecto de promedio.
 se termin con un ligero desenfoque. 
@@ -13,7 +12,7 @@ Detección de líneas con convoluciones de imágenes
 Con convoluciones de imagen, puede detectar líneas fácilmente. 
 Aquí hay cuatro convoluciones para detectar líneas horizontales, 
 verticales y a 45 grados:
-=======
+
 Desenfoque de cuadro simple
 Tiene un efecto promedio dejando asi un ligero desenfoque de la imagen.
 La suma de los elementos de la matriz es 1.0, esto es muy importante 
