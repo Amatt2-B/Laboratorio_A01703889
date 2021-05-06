@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 #Dimensiones de la matriz de la imagen
 #500x1100
 
-def padding (mat, rows, cols):
+def padding (matriz, rows, cols):
     #Convertir la lista de listas a matriz con numpy
     matriz = np.matrix(mat)
     #Cantidad de renglones y columnas más que la matriz original
@@ -24,13 +24,15 @@ def padding (mat, rows, cols):
             final[i + m][j + n] = mat[i, j]
     #Se imprime la matriz final
     plt.imshow(final, cmap='gray')
-    plt.title("Imagen con Padding")
+    plt.title("Padding de imagen")
     plt.show()
     
 #Pedir la matriz original (imagen), y las dimensiones de la matriz solicitada
-imagen = input('Nombre archivo ')
+#Nombre del archivo = foto.jpg
+imagen = input('Nombre del archivo ')
 img = cv2.imread(imagen, cv2.IMREAD_GRAYSCALE)
-rows = int(input('Filas '))
-cols = int(input('Columnas '))
+rows = int(input('Numero de Filas '))
+cols = int(input('Numero de Columnas '))
+
 #Llamar la función padding, mandando la matriz y las dimensiones 
 padding(img, rows, cols)
